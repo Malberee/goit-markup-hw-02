@@ -1,11 +1,45 @@
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --background-team-color: #f5f4fa;
+    --background-hero-footer: #2f303a;
+    --accent-color: #2196F3;
+    --button-active-color: #188CE8;
+    --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
+}
+
 body {
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    color: #212121;
+    color: var(--secondary-text-color);
+    background-color: var(--white-color);
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+.index-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.specification-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
 }
 
 .header {
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 .header-link,
@@ -14,7 +48,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 .list {
@@ -33,7 +67,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 .footer-mail,
@@ -42,19 +76,19 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-mail-tel-color)
 }
 
 .header-mail:hover,
 .header-tel:hover,
 .footer-mail:hover,
 .footer-tel:hover {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .hero {
-    background-color: #2F303A;
-    color: #FFFFFF;
+    background-color: var(--background-hero-footer);
+    color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -64,75 +98,79 @@ body {
 }
 
 .hero-button {
-    background: #2196F3;
+    background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border: none;
+    border-color: transparent;
     cursor: pointer;
 
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background: var(--button-active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .header-logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .header-logo-item {
-    color: #000000;
+    color: var(--black-color);
 }
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--background-hero-footer);
     font-family: 'Roboto';
     font-style: normal;
 }
 
 .address {
-    font-family: 'Roboto';
     font-style: normal;
 }
 
 .footer-logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .footer-logo-item {
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .footer-address {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .advances-paragraph {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 .advances-title {
@@ -141,53 +179,53 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 .link:hover {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .team {
-    background: #F5F4FA;
+    background: var(--background-team-color);
 }
 
-.team-title, {
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
-.team-member, {
+.team-member {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
-.team-paragraph, {
+.team-paragraph {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 .team-item {
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-item {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--white-color);
+
 }
 
 .portfolio-title {
@@ -195,7 +233,7 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 .portfolio-paragraph {
@@ -203,13 +241,15 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
-.portfolio-button {
-    background: #F5F4FA;
+.filter-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    background-color: var(--background-team-color);
     border-radius: 4px;
-    border: none;
+    border-color: transparent;
     cursor: pointer;
 
     font-weight: 500;
@@ -219,10 +259,10 @@ body {
     letter-spacing: 0.03em;
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
-    background: #2196F3;
-    color: #ffffff;
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 
@@ -234,5 +274,5 @@ body {
 }
 
 .selected-page {
-    color: #2196F3;
+    color: var(--accent-color);
 }
